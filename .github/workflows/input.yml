@@ -23,6 +23,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: send greeting
         run: echo "Hello ${{ github.event.inputs.nombre }}"
+      - name: send otracosa
+        run: echo "ADIOS ${{ github.event.inputs.nombre }}"
 
   mayito:
     # The type of runner that the job will run on
